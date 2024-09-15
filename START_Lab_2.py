@@ -19,7 +19,7 @@ def lab2Question2(number_val):
         number_sequence = 1
         n1, n2 = 0, 1
 
-        if value <= 0:
+        if value >= 0:
             while counter < number_sequence:
                 if n1 <= value:
                     current_fibonacci.append(n1)
@@ -41,6 +41,7 @@ def lab2Question3(str1, str2):
     # Return the number of times str2 appears in str1
     # For example if str1 = "coding is cool" and str2 = "co" then output should be 2.
     def string_counter(first_string, second_string):
+        first_string.lower()
         return first_string.count(second_string)
     
     return string_counter(str1, str2)
@@ -76,4 +77,3 @@ def isValidPassword(password):
     # - Contains at least one lowercase letter
     # - Contains at least one number
     pass
-     
