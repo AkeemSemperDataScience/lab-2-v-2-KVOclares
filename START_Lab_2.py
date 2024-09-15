@@ -51,9 +51,14 @@ def lab2Question4(list1, list2):
     # Create a function that takes in two equal length list of numbers. 
     # Return a list of the element-wise sum of the two lists - i.e. the first element of the output list is the sum of the first elements of the input lists
     # If the condition of the function is not satisfied, return a blank list
-    pass
+    def sums_list(list1, list2):
+        if len(list1) == len(list2):
+            sum_list = [list1[i] + list2[i] for i in range(len(list1))]
+        else:
+            sum_list = []
+        return sum_list
+    #pass
 
-    return sum_list
 
 def lab2Question5():
     # Create a function* that asks a user to enter a password that meets the following criteria:
