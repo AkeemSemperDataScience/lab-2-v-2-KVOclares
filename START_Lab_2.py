@@ -104,5 +104,3 @@ def isValidPassword(password):
     return all([Count_checker(password), Uppercase_checker(password), Lower_checker(password), Number_checker(password)]) 
 
     pass
-
-lab2Question5()
